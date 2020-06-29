@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
@@ -18,6 +17,5 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .addFilterBefore(new JwtFilter(), UsernamePasswordAuthenticationFilter.class);
         http.csrf().disable();
-
     }
 }
