@@ -1,4 +1,4 @@
-package pl.iwona.week6securityjwt;
+package pl.iwona.week6securityjwt.controller;
 
 import java.util.ArrayList;
 import java.util.List;
