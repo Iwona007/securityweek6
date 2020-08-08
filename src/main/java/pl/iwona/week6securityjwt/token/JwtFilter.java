@@ -31,9 +31,6 @@ public class JwtFilter extends OncePerRequestFilter {
             "V6L11BWkpzGXSW4Hv43qa+GSYOD2QU68Mb59oSk2OB+BtOLpJofmbGEGgvmwyCI9\n" +
             "MwIDAQAB";
 
-//    @Value("${public}")
-//    String publicKeyString;
-
     @Override
     protected void doFilterInternal(HttpServletRequest httpServletRequest,
                                     HttpServletResponse httpServletResponse, FilterChain filterChain)
