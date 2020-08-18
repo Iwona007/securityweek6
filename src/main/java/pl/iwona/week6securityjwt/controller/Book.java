@@ -21,7 +21,7 @@ public class Book {
         return bookList;
     }
 
-    @PostMapping
+    @PostMapping ("/add")
     public void setBookList(@RequestBody String book) {
         this.bookList.add(book);
     }
